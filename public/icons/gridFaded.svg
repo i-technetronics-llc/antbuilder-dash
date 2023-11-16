@@ -1,0 +1,43 @@
+<svg width="636" height="557" viewBox="0 0 636 557" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_1060_3769" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="636" height="557">
+<rect width="636" height="557" fill="url(#paint0_radial_1060_3769)"/>
+</mask>
+<g mask="url(#mask0_1060_3769)">
+<rect x="80.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="159.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="238.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="317.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="396.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="475.5" y="75.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="80.5" y="154.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="159.5" y="154.5" width="79" height="79" fill="#F3F8FF" stroke="#D0E1FF"/>
+<rect x="238.5" y="154.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="317.5" y="154.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="396.5" y="154.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="475.5" y="154.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="80.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="159.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="238.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="317.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="396.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="475.5" y="233.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="80.5" y="312.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="159.5" y="312.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="238.5" y="312.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="317.5" y="312.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="396.5" y="312.5" width="79" height="79" fill="#F3F8FF" stroke="#D0E1FF"/>
+<rect x="475.5" y="312.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="80.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="159.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="238.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="317.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="396.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+<rect x="475.5" y="391.5" width="79" height="79" stroke="#D0E1FF"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_1060_3769" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(318 278.5) rotate(90) scale(278.5 318)">
+<stop stop-color="#EBF1FC"/>
+<stop offset="0.712572" stop-color="#EBF1FC" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
