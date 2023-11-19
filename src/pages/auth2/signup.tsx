@@ -48,7 +48,7 @@ export default function StaffSignUp() {
                 email === "" && password === ""
                   ? " bg-[#D0E1FF]"
                   : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-              } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
+              }  rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
               onClick={() => {
                 setView("second");
               }}
@@ -60,7 +60,7 @@ export default function StaffSignUp() {
               Have account?{" "}
               <span
                 className="text-[#3B82F6] cursor-pointer"
-                onClick={() => router.push("/onboarding/staff_signIn")}
+                onClick={() => router.push("/auth2/signin")}
               >
                 Log In
               </span>

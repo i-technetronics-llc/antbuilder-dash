@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { MdOutlineMenu } from "react-icons/md";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 export default function ProjectStatusDashboard() {
   const [isClient, setIsClient] = useState(false);
@@ -18,7 +17,7 @@ export default function ProjectStatusDashboard() {
   }, []);
 
   return (
-    <div className="w-full h-full border-[1px] border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
+    <div className="w-full h-full border-[1px] shadow-md  border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
       <div className="w-full border-b-[1px] border-[#EBEBEB] flex items-center gap-2">
         <svg
           width="16"

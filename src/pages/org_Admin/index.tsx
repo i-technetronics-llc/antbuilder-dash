@@ -10,14 +10,14 @@ export default function OrgAdminDashboard() {
   return (
     <OrgAdminLayout>
       <OrgAdminNavbar page="Dashbord" />
-      <div className="grid md:grid-cols-2  lg:grid-cols-4 my-8 gap-3">
-        <ProjectCountDashboard />
+      <div className="grid md:grid-cols-3  lg:grid-cols-3  my-8 gap-3">
+        {/* <ProjectCountDashboard /> */}
         <ProjectStatusDashboard />
         <ProjectDeadlineDashboard />
         <QuickActionsOrgAdm />
       </div>
       <div className="w-full border-b-[2px] border-[#cccccc70]"></div>
-      <div className="grid grid-cols-3 gap-3 my-8">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 my-8">
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />

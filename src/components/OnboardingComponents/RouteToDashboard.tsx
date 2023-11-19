@@ -32,7 +32,8 @@ export default function RouteToDashboard() {
         <button
           className={`w-full ${
             link === "" ? " bg-[#D0E1FF]" : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-          } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
+          }  rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
+          onClick={() => router.push("/org_Admin/")}
         >
           {" "}
           Next

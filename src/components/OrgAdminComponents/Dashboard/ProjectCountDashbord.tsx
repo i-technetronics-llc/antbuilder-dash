@@ -2,7 +2,7 @@ import { MdOutlineMenu } from "react-icons/md";
 
 export default function ProjectCountDashboard() {
   return (
-    <div className="w-full h-full border-[1px]  d border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
+    <div className="w-full h-full border-[1px] shadow-md   d border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
       <div className="w-full border-b-[1px] border-[#EBEBEB] flex items-center gap-2">
         <MdOutlineMenu />
         <p className="text-sm font-semibold">PROJECT COUNT</p>
