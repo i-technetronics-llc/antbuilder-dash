@@ -45,12 +45,15 @@ export default function ResetPassword() {
                 email === ""
                   ? " bg-[#D0E1FF]"
                   : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-              } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
+              } rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
             >
               {" "}
               Reset Password
             </button>
-            <button className="w-fit h-fit px-3 py-1 text-[#3B4350] font-semibold ">
+            <button
+              className="w-fit h-fit px-3 py-1 text-[#3B4350] font-semibold"
+              onClick={() => router.push("/auth/signin")}
+            >
               Return to Log In
             </button>
           </div>

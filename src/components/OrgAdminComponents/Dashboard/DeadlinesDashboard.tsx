@@ -22,7 +22,7 @@ export default function ProjectDeadlineDashboard() {
     },
   ];
   return (
-    <div className="w-full h-full border-[1px] border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
+    <div className="w-full h-full border-[1px] shadow-md border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-1">
       <div className="w-full border-b-[1px] border-[#EBEBEB] flex items-center gap-2">
         <FiAlertOctagon />
         <p className="text-sm font-semibold">UPCOMING DEADLINES</p>

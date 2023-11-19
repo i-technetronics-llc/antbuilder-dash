@@ -8,7 +8,7 @@ type navbarProps = {
 export default function OrgAdminNavbar({ page }: navbarProps) {
   const [searchTerm, setSearchTerm] = useState<string>("");
   return (
-    <div className="w-full sticky top-0 flex font-mukta items-center justify-between py-2 px-5 bg-[#FCFCFC]">
+    <div className="w-full sticky top-0 flex font-mukta items-center justify-between z-10 py-2 px-5 bg-[#FCFCFC]">
       <p className="text-xl text-[#3B4350]  font-semibold">{page}</p>
       <div className="max-w-[200px]">
         <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />

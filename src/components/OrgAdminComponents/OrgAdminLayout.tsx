@@ -46,14 +46,28 @@ export default function OrgAdminLayout({ children }: childrenProps) {
             )}
           </div>
         </div>
-        <div className="flex flex-col h-full gap-12">
-          <Image
-            src={"/icons/antbuilderlogoLight.svg"}
-            alt="logo"
-            width={40}
-            height={10}
-            className="cursor-pointer"
-          />
+        <div
+          className={`flex flex-col h-full gap-12 ${
+            !sideBar && "items-center"
+          } `}
+        >
+          {sideBar ? (
+            <Image
+              src={"/icons/antbuilderlogoLight.svg"}
+              alt="logo"
+              width={40}
+              height={10}
+              className="cursor-pointer"
+            />
+          ) : (
+            <Image
+              src={"/icons/antFace.svg"}
+              alt="logo"
+              width={10}
+              height={10}
+              className="cursor-pointer"
+            />
+          )}
           <div className="flex flex-col w-full gap-4">
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6] hover:border-[2px] ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${

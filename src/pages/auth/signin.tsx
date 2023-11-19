@@ -20,6 +20,7 @@ export default function ClientSignIn() {
             alt="logo light"
             w={40}
             h={10}
+            className="hidden lg:block"
           />
           {/* <p className=" font-semibold text-[#3B4350]">Log In</p> */}
 
@@ -39,7 +40,7 @@ export default function ClientSignIn() {
             </Checkbox>
 
             <Link
-              href={"/onboarding/reset_password"}
+              href={"/auth/reset_password"}
               className="text-sm text-[#6C7480] font-semibold"
             >
               Forgot Password?
@@ -68,7 +69,7 @@ export default function ClientSignIn() {
                 email === "" && password === ""
                   ? " bg-[#D0E1FF]"
                   : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-              } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
+              } rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
             >
               {" "}
               Login
@@ -77,7 +78,7 @@ export default function ClientSignIn() {
               No account?{" "}
               <span
                 className="text-[#3B82F6] cursor-pointer"
-                onClick={() => router.push("/onboarding/client_signUp")}
+                onClick={() => router.push("/auth/signup")}
               >
                 Sign Up
               </span>
