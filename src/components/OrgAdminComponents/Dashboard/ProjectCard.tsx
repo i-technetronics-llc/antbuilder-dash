@@ -3,7 +3,7 @@ import { Progress } from "@chakra-ui/react";
 
 export default function ProjectCard() {
   return (
-    <div className="w-full h-full border-[1px] shadow-md   border-[#EBEBEB] rounded-xl p-5 flex flex-col gap-3">
+    <div className="w-full h-full border-[1px] shadow-md   border-[#EBEBEB] justify-between rounded-xl p-5 flex flex-col gap-3">
       <div className="w-full flex md:flex-row flex-col items-center justify-between">
         <div className="flex items-center gap-2">
           <Image

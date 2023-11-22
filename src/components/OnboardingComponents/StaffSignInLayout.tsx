@@ -14,14 +14,14 @@ export default function StaffSignInLayout({ children }: childrenProps) {
           w={40}
           h={20}
         />
-        <p className="text-[32px]   leading-24 text-white font-bold">
+        <p className="text-[32px] font-millik   leading-24 text-white font-bold">
           Unleash the Power of Iterative App Development with Antbuilder
         </p>
         <div className="w-full flex items-center justify-center overflow-hidden">
           <Image src="/icons/gridFaded.svg" alt="logo Dark" />
         </div>
       </div>
-      <div className="w-full bg-white flex items-center justify-center h-full">
+      <div className="w-full bg-white flex items-center font-mukta justify-center h-full">
         {children}
       </div>
     </div>

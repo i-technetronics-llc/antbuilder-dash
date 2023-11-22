@@ -22,7 +22,7 @@ export default function BookingInformation() {
     <div className="">
       <OnboardingNavbar />
       <div className="h-[90vh] flex items-center w-full justify-center ">
-        <div className="lg:w-[35%] font-mukta max-h-[90%] overflow-y-scroll w-[80%] border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
+        <div className="lg:w-[35%] font-mukta shadow-md max-h-[90%] overflow-y-scroll w-[80%] border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
           {/* <Image
               src="/icons/antbuilderlogoLight.svg"
               alt="logo light"

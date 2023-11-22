@@ -3,7 +3,7 @@ import AddTeamMemberModal from "@/components/Utils/Modals/AddTeamMemberModal";
 import { Image, useDisclosure } from "@chakra-ui/react";
 import { MdOutlineAddCircleOutline } from "react-icons/md";
 import { TiFlashOutline } from "react-icons/ti";
-export default function QuickActionsOrgAdm() {
+export default function QuickActionsAccExec() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {
     isOpen: isProjectOpen,
@@ -22,18 +22,18 @@ export default function QuickActionsOrgAdm() {
           onClick={onProjectOpen}
         >
           <MdOutlineAddCircleOutline />
-          <p className="text-left text-xs">Add New Project</p>
+          <p className="text-left text-xs">Create Invoice</p>
         </button>
         <button
-          className="flex  p-2 rounded-full w-full items-center gap-3 text-[#3B82F6] border-[#3B82F6] ease-in-out duration-700 text-sm  border-[1px] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white"
+          className="flex  p-2 rounded-full w-full items-center gap-3 text-[#3B82F6] border-[#3B82F6] ease-in-out duration-700 border-[1px] text-[#3B82F6] hover:bg-[#3B82F6] hover:text-white"
           onClick={onOpen}
         >
           <MdOutlineAddCircleOutline />
-          <p className="text-left text-xs">Invite New User</p>
+          <p className="text-left text-xs"> Module Estimation</p>
         </button>
       </div>
-      <AddProjectModal isOpen={isProjectOpen} onClose={onProjectClose} />
-      <AddTeamMemberModal isOpen={isOpen} onClose={onClose} />
+      {/* <AddProjectModal isOpen={isProjectOpen} onClose={onProjectClose} />
+      <AddTeamMemberModal isOpen={isOpen} onClose={onClose} /> */}
     </div>
   );
 }

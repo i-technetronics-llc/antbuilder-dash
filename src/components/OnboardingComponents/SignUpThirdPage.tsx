@@ -52,7 +52,6 @@ export default function SignUpThirdPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={company}
@@ -64,7 +63,6 @@ export default function SignUpThirdPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={website}
@@ -74,14 +72,14 @@ export default function SignUpThirdPage({
       <div className="flex flex-col gap-1 w-full">
         <p className="text-xs font-semibold text-[#6C7480]">Industry</p>
 
-        <Select size={"sm"} onChange={(e) => setIndustry(e.target.value)}>
+        <Select onChange={(e) => setIndustry(e.target.value)}>
           <option value="Please Select Industry">Please Select Industry</option>
         </Select>
       </div>
       <div className="flex flex-col gap-1 w-full">
         <p className="text-xs font-semibold text-[#6C7480]">Country Region</p>
 
-        <Select size={"sm"} onChange={(e) => setCountry(e.target.value)}>
+        <Select onChange={(e) => setCountry(e.target.value)}>
           <option value="Please Select Industry">Please Select Country</option>
         </Select>
       </div>
@@ -90,7 +88,6 @@ export default function SignUpThirdPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={employeeCount}
@@ -102,7 +99,6 @@ export default function SignUpThirdPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={projectTitle}
@@ -114,7 +110,6 @@ export default function SignUpThirdPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={projectBudget}
@@ -128,7 +123,7 @@ export default function SignUpThirdPage({
 
         <Textarea
           //   type="text"
-          size={"sm"}
+
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={projectDescription}
