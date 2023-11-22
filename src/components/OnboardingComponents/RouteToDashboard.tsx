@@ -7,7 +7,7 @@ export default function RouteToDashboard() {
   const [link, setLink] = useState<string>("");
 
   return (
-    <div className=" w-[80%] border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
+    <div className=" w-[80%] border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
       <p className=" font-semibold text-[#3B4350]">Project Link</p>
       <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
         Input your the project link sent to your email to access your dashboard
@@ -33,7 +33,7 @@ export default function RouteToDashboard() {
           className={`w-full ${
             link === "" ? " bg-[#D0E1FF]" : "bg-[#3B82F6] hover:bg-[#3B82F670]"
           }  rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
-          onClick={() => router.push("/org_Admin/")}
+          onClick={() => router.push("/org-Admin/")}
         >
           {" "}
           Next

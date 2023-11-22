@@ -14,6 +14,13 @@
   font-family: "Mukta";
   font-weight: normal;
 }
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/fonts/Millik.ttf");
+  font-family: "Millik";
+  font-weight: normal;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

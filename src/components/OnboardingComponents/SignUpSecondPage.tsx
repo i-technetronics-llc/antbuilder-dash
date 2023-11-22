@@ -35,7 +35,6 @@ export default function SignUpSecondPage({
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
             bg={"#F8F8F8"}
-            size={"sm"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
@@ -61,7 +60,6 @@ export default function SignUpSecondPage({
               type={showPassword ? "text" : "password"}
               className="bg-[#F8F8F8]"
               bg={"#F8F8F8"}
-              size={"sm"}
               value={password2}
               onChange={(e) => setPassword2(e.target.value)}
             />
@@ -90,7 +88,6 @@ export default function SignUpSecondPage({
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
             bg={"#F8F8F8"}
-            size={"sm"}
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
           />

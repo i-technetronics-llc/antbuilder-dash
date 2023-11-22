@@ -1,9 +1,10 @@
-import { feature, singlefeature } from "@/models/org_Admin.models";
+// import { feature, singlefeature } from "@/models/org-Admin.models";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { LuArrowLeftCircle } from "react-icons/lu";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { VscEllipsis } from "react-icons/vsc";
 import ModuleEstimation from "./ModuleEstimation";
+import { feature, singlefeature } from "@/models/org_Admin.models";
 type ModuleDetailsProps = {
   setView: Dispatch<SetStateAction<string>>;
   features: feature[];

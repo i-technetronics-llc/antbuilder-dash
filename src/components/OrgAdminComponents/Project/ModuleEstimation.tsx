@@ -1,4 +1,4 @@
-import { feature, singlefeature } from "@/models/org_Admin.models";
+import { feature, singlefeature } from "@/models/org-Admin.models";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { LuArrowLeftCircle } from "react-icons/lu";
 import { MdOutlineRemoveRedEye } from "react-icons/md";

@@ -29,7 +29,6 @@ export default function SignUpFirstPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={firstName}
@@ -41,7 +40,6 @@ export default function SignUpFirstPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={lastName}
@@ -53,7 +51,6 @@ export default function SignUpFirstPage({
 
         <Input
           type="text"
-          size={"sm"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={email}

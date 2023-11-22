@@ -13,7 +13,7 @@ export default function StaffSignIn() {
   return (
     <StaffSignInLayout>
       {view === "first" ? (
-        <div className=" w-[80%] font-mukta border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
+        <div className=" w-[80%] font-mukta border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
           <p className=" font-semibold text-[#3B4350]">Sign In</p>
           <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
             Set up your account and get in touch with a skilled development
@@ -28,7 +28,7 @@ export default function StaffSignIn() {
             />
 
             {/* <Link
-              href={"/onboarding/reset_password"}
+              href={"/onboarding/reset-password"}
               className="text-sm text-[#6C7480] font-semibold"
             >
               Forgot Password?

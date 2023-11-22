@@ -71,12 +71,12 @@ export default function OrgAdminLayout({ children }: childrenProps) {
           <div className="flex flex-col w-full gap-4">
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6] hover:border-[2px] ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-                router.asPath == "/org_Admin"
+                router.asPath == "/org-Admin"
                   ? "border-[2px]  text-[#3B82F6]"
                   : "text-[#6C7480] hover:border-[2px] "
               }  `}
               onClick={() => {
-                router.push("/org_Admin");
+                router.push("/org-Admin");
               }}
             >
               <BsGrid />
@@ -86,12 +86,12 @@ export default function OrgAdminLayout({ children }: childrenProps) {
             </div>
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6] hover:border-[2px] ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-                router.asPath == "/org_Admin/project"
+                router.asPath == "/org-Admin/project"
                   ? "border-[2px]  text-[#3B82F6]"
                   : "text-[#6C7480] hover:border-[2px] "
               }  `}
               onClick={() => {
-                router.push("/org_Admin/project");
+                router.push("/org-Admin/project");
               }}
             >
               <GrCube />
@@ -99,12 +99,12 @@ export default function OrgAdminLayout({ children }: childrenProps) {
             </div>
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6] hover:border-[2px] ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-                router.asPath == "/org_Admin/milstones"
+                router.asPath == "/org-Admin/milstones"
                   ? "border-[2px]  text-[#3B82F6]"
                   : "text-[#6C7480] hover:border-[2px]  "
               }  `}
               onClick={() => {
-                router.push("/org_Admin");
+                router.push("/org-Admin");
               }}
             >
               <MdOutlineLocationOn />
@@ -114,12 +114,12 @@ export default function OrgAdminLayout({ children }: childrenProps) {
             </div>
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6]  ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-                router.asPath == "/org_Admin/team"
+                router.asPath == "/org-Admin/team"
                   ? "border-[2px]  text-[#3B82F6]"
                   : "text-[#6C7480] hover:border-[2px]  "
               }  `}
               onClick={() => {
-                router.push("/org_Admin");
+                router.push("/org-Admin");
               }}
             >
               <RiTeamLine />
@@ -127,12 +127,12 @@ export default function OrgAdminLayout({ children }: childrenProps) {
             </div>
             <div
               className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6]  ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-                router.asPath == "/org_Admin/transactions"
+                router.asPath == "/org-Admin/transactions"
                   ? "border-[2px]  text-[#3B82F6]"
                   : "text-[#6C7480] hover:border-[2px]  "
               }  `}
               onClick={() => {
-                router.push("/org_Admin");
+                router.push("/org-Admin");
               }}
             >
               <BiDollarCircle />
@@ -145,7 +145,7 @@ export default function OrgAdminLayout({ children }: childrenProps) {
         <div className="flex flex-col w-full gap-4 border-t-[1px] boder-[#cccccc70]">
           <div
             className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6]  ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-              router.asPath == "/org_Admin/settings"
+              router.asPath == "/org-Admin/settings"
                 ? "  text-[#3B82F6]"
                 : "text-[#6C7480]  "
             }  `}
@@ -155,7 +155,7 @@ export default function OrgAdminLayout({ children }: childrenProps) {
           </div>
           <div
             className={`w-full flex gap-3 cursor-pointer items-center font-semibold hover:text-[#3B82F6]  ease-in-out duration-400 px-5 py-2 rounded-full border-[#EDF4FF] ${
-              router.asPath == "/org_Admin/faq"
+              router.asPath == "/org-Admin/faq"
                 ? " text-[#3B82F6]"
                 : "text-[#6C7480]  "
             }  `}

@@ -2,7 +2,7 @@ import { TbBoxMultiple } from "react-icons/tb";
 import AdditionalScope from "./AdditionalScope";
 import Modules from "./Modules";
 import { useState } from "react";
-import { feature } from "@/models/org_Admin.models";
+import { feature } from "@/models/org-Admin.models";
 import ModuleDetail from "./ModuleDetail";
 export default function PrdFlow() {
   const [view, setView] = useState<string>("");

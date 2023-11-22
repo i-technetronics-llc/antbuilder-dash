@@ -1,5 +1,6 @@
 import OrgAdminLayout from "@/components/OrgAdminComponents/OrgAdminLayout";
 import OrgAdminNavbar from "@/components/OrgAdminComponents/OrgAdminNavbar";
+import OverviewFlow from "@/components/OrgAdminComponents/Project/OvervieFlow";
 import PrdFlow from "@/components/OrgAdminComponents/Project/PrdFlow";
 import TransactionFlow from "@/components/OrgAdminComponents/Project/TransactionFlow";
 import {
@@ -33,7 +34,7 @@ export default function OrgAdminProjects() {
 
           <TabPanels>
             <TabPanel>
-              <p>one!</p>
+              <OverviewFlow />
             </TabPanel>
             <TabPanel>
               <PrdFlow />
