@@ -15,7 +15,7 @@ export default function StaffSignUp() {
     <StaffSignInLayout>
       {view === "first" ? (
         <div className=" w-[80%] font-mukta shadow-md border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
-          <p className=" font-semibold text-[#3B4350]">Sign Up</p>
+          <p className=" text-2xl font-semibold text-[#3B4350]">Sign Up</p>
           <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
             Set up your account and get in touch with a skilled development
             expert today!

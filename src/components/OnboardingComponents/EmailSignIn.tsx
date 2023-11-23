@@ -22,7 +22,7 @@ export default function EmailSignIn({
 
         <Input
           type="text"
-          // size={""}
+          size={"lg"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={email}
@@ -37,7 +37,7 @@ export default function EmailSignIn({
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
             bg={"#F8F8F8"}
-            // size={""}
+            size={"lg"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />

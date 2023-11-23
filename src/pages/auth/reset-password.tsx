@@ -1,4 +1,4 @@
-import OnboardingNavbar from "@/components/OnboardingComponents/OnboardingNavbar";
+import ResetPasswordNavbar from "@/components/OnboardingComponents/ResetPasswordNav";
 import { Image, Input } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -9,7 +9,7 @@ export default function ResetPassword() {
   const router = useRouter();
   return (
     <div className="">
-      <OnboardingNavbar />
+      <ResetPasswordNavbar />
       <div className="h-[90vh] font-mukta flex items-center w-full justify-center ">
         <div className="lg:w-[35%] w-[80%] shadow-md border-[1px] border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
           <Image
@@ -31,7 +31,7 @@ export default function ResetPassword() {
 
             <Input
               type="text"
-              // size={"sm"}
+              size={"lg"}
               className="bg-[#F8F8F8]"
               bg={"#F8F8F8"}
               value={email}

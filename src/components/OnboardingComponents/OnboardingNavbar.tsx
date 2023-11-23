@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function OnboardingNavbar() {
   const router = useRouter();
   return (
-    <div className="w-full z-10 sticky top-0 flex items-center justify-between px-5">
+    <div className="w-full z-10 sticky top-0 flex items-center justify-between ">
       <Image
         src="/icons/antbuilderlogoLight.svg"
         alt="logo light"
@@ -16,14 +16,15 @@ export default function OnboardingNavbar() {
         <button
           className="w-fit h-fit px-3 py-1 text-[#3B4350] font-semibold "
           onClick={() => {
-            if (router.asPath === "/onboarding/client_signIn") {
-              router.push("/onboarding/client_signUp");
+            if (router.asPath == "/auth/signin") {
+              router.push("/auth/signup");
+              // alert("1");
             } else {
-              router.push("/onboarding/client_signIn");
+              router.push("/auth/signin");
             }
           }}
         >
-          {router.asPath === "/onboarding/client_signIn" ? "Sign Up" : "Log In"}
+          {router.asPath === "/auth/signin" ? "Sign Up" : "Log In"}
         </button>
 
         <Link href={"https://www.antbuilder.tech/get-started"} target="_blank">
