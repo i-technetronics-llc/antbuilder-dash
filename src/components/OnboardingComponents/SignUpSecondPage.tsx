@@ -34,6 +34,7 @@ export default function SignUpSecondPage({
           <Input
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
+            size={"lg"}
             bg={"#F8F8F8"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -60,6 +61,7 @@ export default function SignUpSecondPage({
               type={showPassword ? "text" : "password"}
               className="bg-[#F8F8F8]"
               bg={"#F8F8F8"}
+              size={"lg"}
               value={password2}
               onChange={(e) => setPassword2(e.target.value)}
             />
@@ -88,6 +90,7 @@ export default function SignUpSecondPage({
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
             bg={"#F8F8F8"}
+            size={"lg"}
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
           />
@@ -120,7 +123,7 @@ export default function SignUpSecondPage({
           }  rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
           onClick={() => {
             // if (terms) {
-            router.push("/onboarding/booking_information");
+            router.push("/auth/signin");
             // }
           }}
         >

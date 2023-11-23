@@ -29,7 +29,9 @@ export default function BookingInformation() {
               w={40}
               h={10}
             /> */}
-          <p className=" font-semibold text-[#3B4350]">Booking Information</p>
+          <p className=" text-2xl font-semibold text-[#3B4350]">
+            Booking Information
+          </p>
           <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
             Schedule a call to let us Know more about your project
           </p>
@@ -63,8 +65,8 @@ export default function BookingInformation() {
 
                 <Input
                   type="date"
-                  size={"sm"}
                   className="bg-[#F8F8F8]"
+                  size={"lg"}
                   bg={"#F8F8F8"}
                   value={date}
                   onChange={(e) => setDate(e.target.value)}
@@ -84,7 +86,7 @@ export default function BookingInformation() {
                     date === ""
                       ? " bg-[#D0E1FF]"
                       : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-                  } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
+                  }  rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
                   onClick={() => {
                     if (date === "") {
                     }

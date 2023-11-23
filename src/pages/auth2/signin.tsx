@@ -12,9 +12,9 @@ export default function StaffSignIn() {
   const [view, setView] = useState<string>("first");
   return (
     <StaffSignInLayout>
-      {view === "first" ? (
-        <div className=" w-[80%] font-mukta border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
-          <p className=" font-semibold text-[#3B4350]">Sign In</p>
+      <div className="w-[80%]">
+        <div className=" w-full font-mukta border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
+          <p className="text-2xl font-semibold text-[#3B4350]">Sign In</p>
           <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
             Set up your account and get in touch with a skilled development
             expert today!
@@ -49,7 +49,7 @@ export default function StaffSignIn() {
                   : "bg-[#3B82F6] hover:bg-[#3B82F670]"
               }  rounded-full ease-in-out duration-700  text-white font-semibold py-3`}
               onClick={() => {
-                setView("second");
+                router.push("/org-Admin");
               }}
             >
               {" "}
@@ -66,9 +66,7 @@ export default function StaffSignIn() {
             </p> */}
           </div>
         </div>
-      ) : (
-        <RouteToDashboard />
-      )}
+      </div>
     </StaffSignInLayout>
   );
 }

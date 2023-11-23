@@ -54,6 +54,7 @@ export default function SignUpThirdPage({
           type="text"
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={company}
           onChange={(e) => setCompany(e.target.value)}
         />
@@ -65,6 +66,7 @@ export default function SignUpThirdPage({
           type="text"
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={website}
           onChange={(e) => setWebsite(e.target.value)}
         />
@@ -90,6 +92,7 @@ export default function SignUpThirdPage({
           type="text"
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={employeeCount}
           onChange={(e) => setEmployeeCount(e.target.value)}
         />
@@ -101,6 +104,7 @@ export default function SignUpThirdPage({
           type="text"
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={projectTitle}
           onChange={(e) => setProjectTitle(e.target.value)}
         />
@@ -112,6 +116,7 @@ export default function SignUpThirdPage({
           type="text"
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={projectBudget}
           onChange={(e) => setProjectBudget(e.target.value)}
         />
@@ -126,6 +131,7 @@ export default function SignUpThirdPage({
 
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
+          size={"lg"}
           value={projectDescription}
           onChange={(e) => setProjectDescription(e.target.value)}
         />
@@ -145,7 +151,7 @@ export default function SignUpThirdPage({
             projectDescription === ""
               ? " bg-[#D0E1FF]"
               : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-          } bg-[#D0E1FF] rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
+          }  rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
           onClick={() => {
             if (projectDescription != "") {
               setView("second");

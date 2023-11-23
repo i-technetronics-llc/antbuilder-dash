@@ -7,7 +7,7 @@ export default function RouteToDashboard() {
   const [link, setLink] = useState<string>("");
 
   return (
-    <div className=" w-[80%] border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
+    <div className=" w-full border-[1px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
       <p className=" font-semibold text-[#3B4350]">Project Link</p>
       <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
         Input your the project link sent to your email to access your dashboard
@@ -18,7 +18,7 @@ export default function RouteToDashboard() {
 
           <Input
             type="text"
-            size={"sm"}
+            size={"lg"}
             className="bg-[#F8F8F8]"
             placeholder="Type here"
             bg={"#F8F8F8"}

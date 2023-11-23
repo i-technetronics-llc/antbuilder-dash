@@ -30,6 +30,7 @@ export default function SignUpFirstPage({
         <Input
           type="text"
           className="bg-[#F8F8F8]"
+          size={"lg"}
           bg={"#F8F8F8"}
           value={firstName}
           onChange={(e) => setFirstName(e.target.value)}
@@ -40,6 +41,7 @@ export default function SignUpFirstPage({
 
         <Input
           type="text"
+          size={"lg"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={lastName}
@@ -51,6 +53,7 @@ export default function SignUpFirstPage({
 
         <Input
           type="text"
+          size={"lg"}
           className="bg-[#F8F8F8]"
           bg={"#F8F8F8"}
           value={email}
@@ -94,7 +97,7 @@ export default function SignUpFirstPage({
           Have account?{" "}
           <span
             className="text-[#3B82F6] cursor-pointer"
-            onClick={() => router.push("/auth/signisn")}
+            onClick={() => router.push("/auth/signin")}
           >
             Log In
           </span>
