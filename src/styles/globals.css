@@ -38,3 +38,19 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+::-webkit-scrollbar {
+  display: none;
+}
+.show-scroll::-webkit-scrollbar {
+  display: block;
+  background-color: #cccccc;
+  width: 3px;
+}
+.calendly-badge-widget {
+  left: 50% !important;
+  margin-left: -100px !important;
+  position: relative;
+  height: 300px;
+  width: fit-content;
+  height: fit-content;
+}
