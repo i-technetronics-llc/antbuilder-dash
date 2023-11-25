@@ -11,3 +11,24 @@ export type feature = {
   features: string;
   featuresDrill: singlefeature[];
 };
+export type CreateBooking = {
+  personalData: {
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+  };
+  companyData: {
+    companyName: string;
+    websiteUrl: string;
+    industry: string;
+    countryName: string;
+    state: string;
+    employeeCount: number;
+  };
+  projectData: {
+    projectTitle: string;
+    projectBudget: number;
+    projectDescription: string;
+  };
+};

@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 export default function OnboardingNavbar() {
   const router = useRouter();
   return (
-    <div className="w-full z-10 sticky top-0 flex items-center justify-between ">
+    <div className="w-full z-10 sticky top-0 flex items-center px-5 justify-between ">
       <Image
         src="/icons/antbuilderlogoLight.svg"
         alt="logo light"
