@@ -20,14 +20,7 @@ export default function ClientSignIn() {
 
         {view === "" ? (
           <div className="w-full font-mukta border-[1.5px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
-            <Image
-              src="/icons/antbuilderlogoLight.svg"
-              alt="logo light"
-              w={40}
-              h={10}
-              className="hidden lg:block"
-            />
-            {/* <p className=" font-semibold text-[#3B4350]">Log In</p> */}
+            <p className="text-2xl font-semibold text-[#3B4350]">Log In</p>
 
             <div className="flex flex-col gap-4">
               <EmailSignIn

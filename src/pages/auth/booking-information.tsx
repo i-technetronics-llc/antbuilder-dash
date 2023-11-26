@@ -50,6 +50,11 @@ export default function BookingInformation() {
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     return regex.test(email);
   }
+  function isValidPhone(phone: string): boolean {
+    const regex =
+      /^\+?([0-9]{1,3})?[-. ]?([(0-9]{1,4})?[-. ]?([0-9]{1,4})?[-. ]?([0-9]{1,4})?[-. ]?([0-9]{1,4})$/;
+    return regex.test(phone);
+  }
   const createBooking = async () => {
     setLoading(true);
     const data: CreateBooking = {
@@ -224,12 +229,12 @@ export default function BookingInformation() {
                       });
                       return;
                     }
-                    if (phone === "") {
+                    if (isValidPhone(phone) === false) {
                       toast({
                         title: "Booking Info.",
-                        description: "Phone number is required",
+                        description: "Kindly enter a valid phone number",
                         status: "error",
-                        duration: 2000,
+                        duration: 3000,
                         isClosable: true,
                       });
                       return;
@@ -250,7 +255,6 @@ export default function BookingInformation() {
                   <p className="text-xs font-semibold text-[#6C7480]">
                     Company Name
                   </p>
-                  <FaAsterisk className="text-red-600 text-[8px]" />
                 </div>
 
                 <Input
@@ -267,7 +271,6 @@ export default function BookingInformation() {
                   <p className="text-xs font-semibold text-[#6C7480]">
                     Website URL
                   </p>
-                  <FaAsterisk className="text-red-600 text-[8px]" />
                 </div>
 
                 <Input
@@ -284,7 +287,6 @@ export default function BookingInformation() {
                   <p className="text-xs font-semibold text-[#6C7480]">
                     Industry
                   </p>
-                  <FaAsterisk className="text-red-600 text-[8px]" />
                 </div>
                 <Input
                   type="text"
@@ -301,7 +303,6 @@ export default function BookingInformation() {
                     <p className="text-xs font-semibold text-[#6C7480]">
                       Country Region
                     </p>
-                    <FaAsterisk className="text-red-600 text-[8px]" />
                   </div>
 
                   <Input
@@ -318,7 +319,6 @@ export default function BookingInformation() {
                     <p className="text-xs font-semibold text-[#6C7480]">
                       State
                     </p>
-                    <FaAsterisk className="text-red-600 text-[8px]" />
                   </div>
 
                   <Input
@@ -356,73 +356,9 @@ export default function BookingInformation() {
                   Back
                 </button>
                 <button
-                  className={`w-fit  ${
-                    employeeCount === undefined
-                      ? " bg-[#D0E1FF]"
-                      : "bg-[#3B82F6] hover:bg-[#3B82F670]"
-                  }  rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
+                  className={`w-fit 
+                     bg-[#3B82F6] hover:bg-[#3B82F670]  rounded-full ease-in-out duration-700  text-white font-semibold px-7 py-3`}
                   onClick={() => {
-                    if (company === "") {
-                      toast({
-                        title: "Booking Info.",
-                        description: "Company Name is required",
-                        status: "error",
-                        duration: 2000,
-                        isClosable: true,
-                      });
-                      return;
-                    }
-                    if (website === "") {
-                      toast({
-                        title: "Booking Info.",
-                        description: "Website Url is required",
-                        status: "error",
-                        duration: 2000,
-                        isClosable: true,
-                      });
-                      return;
-                    }
-                    if (industry === "") {
-                      toast({
-                        title: "Booking Info.",
-                        description: "Industry category is required",
-                        status: "error",
-                        duration: 2000,
-                        isClosable: true,
-                      });
-                      return;
-                    }
-                    if (country === "") {
-                      toast({
-                        title: "Booking Info.",
-                        description: "Please Provide a Country Region",
-                        status: "error",
-                        duration: 2000,
-                        isClosable: true,
-                      });
-                      return;
-                    }
-                    if (state === "") {
-                      toast({
-                        title: "Booking Info.",
-                        description: "Please Provide a State",
-                        status: "error",
-                        duration: 2000,
-                        isClosable: true,
-                      });
-                      return;
-                    }
-                    // if (employeeCount === undefined) {
-                    //   toast({
-                    //     title: "Booking Info.",
-                    //     description: "Please Provide a State",
-                    //     status: "error",
-                    //     duration: 2000,
-                    //     isClosable: true,
-                    //   });
-                    //   return;
-                    // }
-
                     setView("third");
                   }}
                 >
@@ -460,7 +396,7 @@ export default function BookingInformation() {
                 </div>
 
                 <Input
-                  type="text"
+                  type="number"
                   className="bg-[#F8F8F8]"
                   bg={"#F8F8F8"}
                   size={"lg"}
