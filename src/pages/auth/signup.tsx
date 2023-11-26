@@ -22,12 +22,6 @@ export default function ClientSignUp() {
         {/* <OnboardingNavbar /> */}
 
         <div className="  w-full font-mukta border-[1.5px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">
-          {/* <Image
-              src="/icons/antbuilderlogoLight.svg"
-              alt="logo light"
-              w={40}
-              h={10}
-            /> */}
           <p className=" text-2xl font-semibold text-[#3B4350]">Sign Up</p>
           <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
             Enter your email address for instructions on how to reset your
