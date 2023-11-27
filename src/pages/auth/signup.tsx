@@ -18,7 +18,7 @@ export default function ClientSignUp() {
   }, [password, password2]);
   return (
     <StaffSignInLayout>
-      <div className="w-[80%]">
+      <div className="w-[70%]">
         {/* <OnboardingNavbar /> */}
 
         <div className="  w-full font-mukta border-[1.5px] shadow-md border-solid border-[#00000020]  rounded-xl p-5 flex flex-col gap-5">

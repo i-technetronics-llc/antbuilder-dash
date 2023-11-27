@@ -8,10 +8,10 @@ export default function App({ Component, pageProps }: AppProps) {
     <ChakraProvider>
       <Head>
         <title>Ant Builder</title>
-        <meta
+        {/* <meta
           http-equiv="Content-Security-Policy"
           content="upgrade-insecure-requests"
-        />
+        /> */}
       </Head>
       <Component {...pageProps} />
     </ChakraProvider>

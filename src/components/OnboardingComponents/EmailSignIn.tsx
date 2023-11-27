@@ -30,15 +30,18 @@ export default function EmailSignIn({
         />
       </div>
       <div className="flex flex-col gap-1 w-full">
-        <p className="text-xs font-semibold text-[#6C7480]">password</p>
+        <p className="text-xs font-semibold text-[#6C7480]">Password</p>
 
-        <div className="w-full flex items-center gap-2">
+        <div className="w-full flex items-center gap-2 border-[1px] px-2 bg-[#F8F8F8] border-[#cccccc] rounded-lg">
           <Input
             type={showPassword ? "text" : "password"}
             className="bg-[#F8F8F8]"
-            bg={"#F8F8F8"}
             size={"lg"}
             value={password}
+            border={"none"}
+            bg={"transparent"}
+            focusBorderColor="transparent"
+            outline={"none"}
             onChange={(e) => setPassword(e.target.value)}
           />
           {!showPassword ? (

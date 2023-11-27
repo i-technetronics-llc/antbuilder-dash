@@ -14,7 +14,7 @@ export default function StaffSignInLayout({ children }: childrenProps) {
           w={40}
           h={20}
         />
-        <p className="text-[32px] font-millik   leading-24 text-white font-bold">
+        <p className="text-[32px] font-millik tracking-wider leading-24 text-white font-bold">
           Unleash the Power of Iterative App Development with Antbuilder
         </p>
         <div className="w-full flex items-center justify-center  ">
