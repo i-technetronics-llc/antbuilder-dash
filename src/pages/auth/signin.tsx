@@ -15,7 +15,7 @@ export default function ClientSignIn() {
   const [view, setView] = useState<string>("");
   return (
     <StaffSignInLayout>
-      <div className="w-[80%]">
+      <div className="w-[70%]">
         {/* <OnboardingNavbar /> */}
 
         {view === "" ? (
