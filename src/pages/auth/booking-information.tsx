@@ -95,12 +95,20 @@ export default function BookingInformation() {
     <div className="flex w-full h-screen items-center justify-center flex-col">
       <OnboardingNavbar />
       <div className="h-full  flex items-center w-full justify-center">
-        <div className="lg:w-[35%] font-mukta shadow-md  w-[80%] border-[1px] border-solid border-[#00000020] max-h-[90%] overflow-y-scroll  rounded-xl p-5 flex flex-col gap-5">
-          <div className="w-full flex items-center">
-            <p className=" text-2xl w-full font-semibold text-[#3B4350]">
-              Booking Information
-            </p>
-            {/* {view === "fourth" && (
+        <div
+          className={` font-mukta shadow-md  w-[80%] border-[1px] border-solid border-[#00000020]  ${
+            view === "fourth"
+              ? "lg:-[60%] h-fit"
+              : "overflow-y-scroll max-h-[90%] lg:w-[35%]"
+          }   rounded-xl p-5 flex flex-col gap-5`}
+        >
+          {view != "fourth" && (
+            <div className="">
+              <div className="w-full flex items-center">
+                <p className=" text-2xl w-full font-semibold text-[#3B4350]">
+                  Booking Information
+                </p>
+                {/* {view === "fourth" && (
               <div className="w-full flex flex-col lg:flex-row lg:justify-end items-center gap-2 items-center">
                 <button
                   className="w-fit h-fit px-3 py-1 text-[#3B4350] font-semibold "
@@ -121,10 +129,12 @@ export default function BookingInformation() {
                 </button>
               </div>
             )} */}
-          </div>
-          <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
-            Schedule a call to let us Know more about your project
-          </p>
+              </div>
+              <p className=" font-semibold lg:w-[70%] w-full text-sm text-[#3B4350] leading-24">
+                Schedule a call to let us Know more about your project
+              </p>
+            </div>
+          )}
           {view === "first" && (
             <div className="flex gap-4 flex-col">
               <div className="flex flex-col gap-1 w-full">
@@ -479,7 +489,7 @@ export default function BookingInformation() {
             </div>
           )}
           {view === "fourth" && (
-            <div className="flex flex-col gap-4 w-full custom-popup-position">
+            <div className="">
               <InlineWidget
                 url="https://calendly.com/devantbuilder/kick-off-call"
                 prefill={{
