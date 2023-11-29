@@ -54,3 +54,15 @@ body {
   width: fit-content;
   height: fit-content;
 }
+html {
+  scrollbar-width: none; /* For Firefox */
+}
+
+/* For completeness: hide scrollbar in Webkit (Chrome, Safari) and IE */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  overflow: -moz-scrollbars-none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none;
+}
