@@ -1,7 +1,12 @@
 import axios, { HeadersDefaults, AxiosInstance } from "axios";
+import * as configcat from "configcat-js";
 import CookieManager from "@/components/Utils/CookieManager/cookie-manager";
-
-const baseURL = process.env.NEXT_PUBLIC_BASE_URL;
+const sdkKey = process.env.NEXT_PUBLIC_CONFIG_CAT_API_KEY;
+const configCatClient = configcat.getClient(sdkKey as string);
+const baseURL = await configCatClient.getValueAsync(
+  "NEXT_PUBLIC_BASE_URL",
+  "default"
+);
 
 const instance = axios.create({
   baseURL,

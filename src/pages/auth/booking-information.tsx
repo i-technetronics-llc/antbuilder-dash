@@ -19,6 +19,7 @@ import { FaAsterisk, FaEye, FaEyeSlash } from "react-icons/fa";
 import axios from "axios";
 import { CreateBooking } from "@/models/org_Admin.models";
 import BookingServices from "@/services/Booking-services/booking.services";
+import { useFeatureFlag } from "configcat-react";
 
 export default function BookingInformation() {
   const toast = useToast();
@@ -482,6 +483,7 @@ export default function BookingInformation() {
 
                     createBooking();
                   }}
+                  disabled={loading && true}
                 >
                   {loading ? <Spinner size={"sm"} /> : "Next"}
                 </button>
