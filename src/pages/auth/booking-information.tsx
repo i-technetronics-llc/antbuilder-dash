@@ -409,11 +409,11 @@ export default function BookingInformation() {
                   <FaAsterisk className="text-red-600 text-[8px]" />
                 </div>
                 <InputGroup>
-                  <InputLeftElement
+                  {/* <InputLeftElement
                     pointerEvents="none"
                     className="flex items-center justify-center"
                     children="$"
-                  />
+                  /> */}
                   <Input
                     type="number"
                     className="bg-[#F8F8F8]"
