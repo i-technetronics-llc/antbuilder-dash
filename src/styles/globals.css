@@ -41,11 +41,11 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
-.show-scroll::-webkit-scrollbar {
+/* .show-scroll::-webkit-scrollbar {
   display: block;
   background-color: #cccccc;
-  width: 3px;
-}
+  width: 1px;
+} */
 .calendly-badge-widget {
   left: 50% !important;
   margin-left: -100px !important;
@@ -54,15 +54,7 @@ body {
   width: fit-content;
   height: fit-content;
 }
-html {
-  scrollbar-width: none; /* For Firefox */
-}
 
-/* For completeness: hide scrollbar in Webkit (Chrome, Safari) and IE */
-html {
-  -ms-overflow-style: none; /* IE and Edge */
-  overflow: -moz-scrollbars-none; /* Firefox */
-}
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
