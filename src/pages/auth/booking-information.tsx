@@ -7,6 +7,9 @@ import { useEffect, useState } from "react";
 import {
   Checkbox,
   Input,
+  InputGroup,
+  InputLeftAddon,
+  InputLeftElement,
   Select,
   Spinner,
   Textarea,
@@ -405,15 +408,34 @@ export default function BookingInformation() {
                   </p>
                   <FaAsterisk className="text-red-600 text-[8px]" />
                 </div>
-
-                <Input
-                  type="number"
-                  className="bg-[#F8F8F8]"
-                  bg={"#F8F8F8"}
-                  size={"lg"}
-                  value={projectBudget}
-                  onChange={(e) => setProjectBudget(parseInt(e.target.value))}
-                />
+                <InputGroup>
+                  {/* <InputLeftElement
+                    pointerEvents="none"
+                    className="flex items-center justify-center"
+                    children="$"
+                  /> */}
+                  <Input
+                    type="number"
+                    className="bg-[#F8F8F8]"
+                    bg={"#F8F8F8"}
+                    // size={"lg"}
+                    value={projectBudget}
+                    onChange={(e) => {
+                      if (e.target.value.length <= 6) {
+                        setProjectBudget(parseInt(e.target.value));
+                      } else {
+                        toast({
+                          title: "Booking Info.",
+                          description: "Value too long",
+                          status: "error",
+                          duration: 2000,
+                          isClosable: true,
+                        });
+                        return;
+                      }
+                    }}
+                  />
+                </InputGroup>
               </div>
               <div className="flex flex-col gap-1 w-full">
                 <div className="flex items-center gap-1">
